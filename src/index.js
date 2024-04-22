@@ -3,11 +3,11 @@ const path = require('path');
 const {mainScreen, alertScreenError, alertScreenExpired} = require('./js/screens');
 const templateMenu = require('./js/menu');
 
-if(process.env.NODE_ENV !=='production'){
+/*if(process.env.NODE_ENV !=='production'){
     require('electron-reload')(__dirname,{
         electron: path.join(__dirname, '../node_modules/', '.bin', 'electron')
     })
-}
+}*/
 
 app.on('ready', () => {
     mainScreen();

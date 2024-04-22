@@ -34,8 +34,8 @@ function alertScreenError(){
         },
         maximizable: false,
         minimizable: false,
-        width: 300,
-        height: 100,
+        width: 400,
+        height: 150,
     });
     alertWindow.setMenu(null);
     alertWindow.loadURL(url.format({
@@ -54,7 +54,7 @@ function alertScreenExpired(){
         maximizable: false,
         minimizable:false,
         width: 400,
-        height: 165,
+        height: 200,
     });
     alertExpiredWindow.setMenu(null);
     alertExpiredWindow.loadURL(url.format({

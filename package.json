@@ -4,13 +4,25 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "electron src/index.js"
+    "start": "electron src/index.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+
   },
   "keywords": [],
-  "author": "",
+  "author": "Unpcia",
   "license": "ISC",
+  "build": { 
+    "appId":"Unpcia",
+    "asar":true,
+    "win":{
+      "target":"NSIS",
+      "icon":"src/build/logo.ico"
+    }
+  },
   "devDependencies": {
     "electron": "^30.0.1",
+    "electron-builder": "^24.13.3",
     "electron-reload": "^2.0.0-alpha.1"
   }
 }
